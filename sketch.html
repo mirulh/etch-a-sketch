@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <canvas
+      id="myCanvas"
+      width="500"
+      height="600"
+      style="border: 1px solid black"
+    >
+    </canvas> -->
+    <div
+      id="mySquare 1"
+      style="width: 100px; height: 100px; background-color: black"
+    ></div>
+    <div id="mySquare 1"></div>
+    <script>
+      const squares = document.querySelectorAll("div");
+
+      squares.forEach((div) => {
+        div.addEventListener("click", changeColor);
+      });
+
+      function changeColor(e) {
+        e.classList.add("playing");
+      }
+    </script>
+  </body>
+</html>

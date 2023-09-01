@@ -1,0 +1,24 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  gap: 1px;
+}
+
+.grid {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+
+  /* transition: transform 5.3s ease-in-out; 
+  
+  transition - how long it would take to transition fully*/
+}
+
+/* .grid:hover {
+  background-color: black;
+} */

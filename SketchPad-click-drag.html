@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="sketch-style.css" />
+    <title>SketchPad</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="title"><h1>SketchPad</h1></div>
+      <div class="mode">Mode: Coloring</div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+          <button onClick="changeColor('rgb(0,0,0)')">Black</button>
+          <button onClick="changeColor('white')">Eraser</button>
+          <button onClick="randomColor()">Random</button>
+          <button onClick="changeColor('rainbow')">Rainbow</button>
+          <button onClick="resetBoard()">Reset</button>
+        </div>
+        <input
+          type="text"
+          placeholder="size of board"
+          value="16"
+          onChange="changeSize(this.value)"
+        />
+        <button>Set Size</button>
+      </div>
+    </div>
+  </body>
+  <script src="main2.js"></script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Changing Square</title>
+    <style>
+      .color-square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-square" onclick="changeColor(this)"></div>
+
+    <script>
+      function changeColor(square) {
+        const colors = ["red", "blue", "green", "orange", "purple"];
+        const currentColor = square.style.backgroundColor;
+        const newColor =
+          colors[(colors.indexOf(currentColor) + 1) % colors.length];
+        square.style.backgroundColor = newColor;
+      }
+    </script>
+  </body>
+</html>
